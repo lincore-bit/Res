@@ -179,3 +179,61 @@ ul li {
     color: #000000;
   }
 }
+/* =========================
+   MOBILE RESPONSIVENESS
+   ========================= */
+
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+    margin: 20px auto;
+  }
+
+  .hero,
+  .wide,
+  .metrics-inline {
+    grid-column: span 1;
+  }
+
+  .hero {
+    padding: 24px;
+  }
+
+  .hero h1 {
+    font-size: 1.9rem;
+  }
+
+  .metrics-inline {
+    flex-direction: column;
+    gap: 14px;
+    text-align: left;
+  }
+
+  .metrics-inline strong {
+    font-size: 1.2rem;
+  }
+
+  .card {
+    padding: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 0.95rem;
+  }
+
+  .hero h1 {
+    font-size: 1.7rem;
+  }
+
+  .tags {
+    gap: 6px;
+  }
+
+  .tags li {
+    font-size: 0.75rem;
+    padding: 5px 10px;
+  }
+}
+
